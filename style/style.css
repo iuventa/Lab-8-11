@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header{
+    /* width: 100%; */
+    height: 10vh;
+    background-image: linear-gradient(to right top, #000000, #ec21ff);
+}
+.yuti, .box{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 5px #ec21ff, 0 0 5px #ec21ff inset;
+    margin: 50px auto;
+    border-radius: 15px;
+    transition: 2s;
+}
+.yuti:hover{
+    transform: scale(2);
+}
+.box{
+    background-color: #000000;
+    animation-name: ferisshecvla;
+    animation-duration: 5s;
+    /* animation-timing-function: ease-in-out; */
+}
+.yuti{
+    animation: loader 2s ease-in infinite;
+}
+@keyframes loader {
+    0%{transform: rotateY(0);}
+    33%{transform: rotateX(180deg);}
+    67%{transform: rotateY(180deg);}
+    100%{transform: rotateX(0);}
+}
+@keyframes ferisshecvla {
+    0%{background-color: #000000;}
+    33%{background-color: #ec21ff;}
+    67%{background-color: #fff821;}
+    100%{background-color: #000000;}
+}
+.container{
+    width: 1000px;
+    padding: 50px;
+    background-color: #ec21ff;
+    margin: 50px;
+}
+.container-item{
+    width: 50px;
+    height: 50px;
+    background-color: #fff821;
+    margin: 20px;
+    
+}
+.container:hover .container-item{
+    width: 90%;
+}
+.item1{
+    transition: 2s linear;
+}
+.item2{
+    transition: 2s ease;
+}
+.item3{
+    transition: 2s ease-in;
+}
+.item4{
+    transition: 2s ease-out;
+}
+.item5{
+    transition: 2s ease-in-out;
+}
+.sale{
+    width: 600px;
+    height: 200px;
+    margin: 50px auto;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+.sale p{
+    margin: 20px;
+}
+.wre{
+    width: 50px;
+    height: 50px;
+    background-color: #fff821;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: brunva 2s 1s infinite;
+}
+@keyframes brunva {
+    0%{top:0; left: 0;}
+    25%{top:0; left:550px;}
+    50%{top:150px; left:550px;}
+    75%{top:150px; left:0;}
+    100%{top:0; left: 0;}
+}
+@media only screen and (max-width: 1024px){
+    main{
+        padding: 50px;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    main{
+        padding: 50px;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    .sale{
+        width: 400px;
+        margin: 50px auto;
+    }
+    @keyframes brunva {
+        0%{top:0; left: 0;}
+        25%{top:0; left:350px;}
+        50%{top:150px; left:350px;}
+        75%{top:150px; left:0;}
+        100%{top:0; left: 0;}
+    }
+}
