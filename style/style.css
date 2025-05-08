@@ -124,11 +124,11 @@ header{
         width: 400px;
         margin: 50px auto;
     }
-    @keyframes brunva {
+    /* @keyframes brunva {
         0%{top:0; left: 0;}
         25%{top:0; left:350px;}
         50%{top:150px; left:350px;}
         75%{top:150px; left:0;}
         100%{top:0; left: 0;}
-    }
+    } */
 }
